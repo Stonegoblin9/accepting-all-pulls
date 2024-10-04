@@ -1,0 +1,1091 @@
+$ EZ-EDS Version 3.23.1.20171205 Generated Electronic Data Sheet
+
+$ ****************************************************************************
+$ Trumpf Schweiz AG
+$ ****************************************************************************
+$  
+$ (c) Copyright 2018 Trumpf Schweiz AG. All Rights Reserved.
+$  
+$ Author: Steffen Ziegs
+$ Date:   04.01.2018
+$  
+$ ****************************************************************************
+$  
+$ ATTENTION:
+$ Changes in this file can cause configuration or communication problems.
+$  
+$ ****************************************************************************
+$  
+$ Changes:
+$ Version  Date       Name              Description
+$ 1.0      28.12.2017 Thomas Grebenz    Initial Version
+$                                       MOD: Enums of Laser control, Digital outputs, Laser status, Digital inputs
+$                                       MOD: [port] section deleted
+$                                       ADD: object name to each section
+$                                       MOD: [ParamClass] removed since just necessary if - and only if -
+$                                            Parameter Object (0xF) is implemented in the device/firmware.
+$                                       MOD: Parameter CIP Data type UINT results in Logix Designer
+$                                            data type INT since not supported in Logix and
+$                                            Module-Defined data types are converted in s SINT array!
+$                                       MOD: Data type of bit-type parameters changed to bit types (e.g. BYTE)
+$                                       MOD: Input assembly instance from 101 to 150
+$ ****************************************************************************
+
+[File]
+        DescText = "EDS-File for TruMark Marking Laser EtherNet/IP Adapter";
+        CreateDate = 02-03-2016;
+        CreateTime = 15:24:38;
+        ModDate = 02-03-2016;
+        ModTime = 15:24:40;
+        Revision = 1.0;
+        HomeURL = "www.trumpf.com";
+        1_IOC_Details_License = 0x15F889BA;
+
+[Device]
+        VendCode = 1499;
+        VendName = "Trumpf Schweiz AG";
+        ProdType = 43;
+        ProdTypeStr = "Generic Device";
+        ProdCode = 1;
+        MajRev = 1;
+        MinRev = 1;
+        ProdName = "TruMark - Marking Laser";
+        Catalog = "TruMark Series";
+        Icon = "TruMark.ico";
+        IconContents =
+                "AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAwAAA"
+                "AAAAAAAAAAAAEAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAA"
+                "gICAAMDAwAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAzMzMzMzMwADMzMzMzMzAAMzMzMzMzMAAzMzMzMzM"
+                "wADMzMzMzMzAAMzMzMzMzMAAzMzMzMzMwADMzMzMzMzAAMzMzMzMzMAAAAAA"
+                "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAA3/8AAI//AAAABwAA"
+                "AAcAAAAHAAAABwAAAAcAAAAHAAAABwAAAAcAAAAHAACADwAA3d8AAN3fAADd"
+                "3wAA";
+
+[Device Classification]
+        Class1 = EtherNetIP;
+
+[Params]
+        Param1 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Laser control",        $ name
+                "",                     $ units
+                "field bus -> TruMark", $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1 =
+                0,"Laser / shutter",
+                1,"Shutter",
+                2,"Laser reset",
+                3,"Pilot laser",
+                4,"Reserved4",
+                5,"Reserved5",
+                6,"Reserved6",
+                7,"Start converting (available after TruMark)",
+                8,"Start marking",
+                9,"Scanner beam check (available after TruMark)",
+                11,"Reserved11",
+                12,"Reserved12",
+                13,"Reserved13",
+                14,"Reserved14",
+                15,"Cancel marking (available after TruMark)",
+                16,"Reserved16",
+                17,"Reserved17",
+                18,"Reserved18",
+                19,"Reserved19",
+                20,"Reserved20",
+                21,"Reserved21",
+                22,"Reserved22",
+                23,"Reserved23",
+                24,"Reserved24",
+                25,"Reserved25",
+                26,"Reserved26",
+                27,"Reserved27",
+                28,"Reserved28",
+                29,"Reserved29",
+                30,"Reserved30",
+                31,"Reserved31";
+        Param2 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Digital outputs",      $ name
+                "",                     $ units
+                "field bus -> TruMark", $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum2 =
+                0,"A1 (used for TruTops Mark)",
+                1,"A2 (used for TruTops Mark)",
+                2,"A3 (used for TruTops Mark)",
+                3,"A4 (used for TruTops Mark)",
+                4,"A5 (used for TruTops Mark)",
+                5,"A6 (used for TruTops Mark)",
+                6,"A7 (used for TruTops Mark)",
+                7,"A8 (used for TruTops Mark)",
+                8,"A9",
+                9,"A10",
+                10,"A11",
+                11,"A12",
+                12,"A13",
+                13,"A14",
+                14,"A15",
+                15,"A16",
+                16,"Reserved17",
+                17,"Reserved18",
+                18,"Reserved19",
+                19,"Reserved20",
+                20,"Reserved21",
+                21,"Reserved22",
+                22,"Reserved23",
+                23,"Reserved24",
+                24,"Reserved25",
+                25,"Reserved26",
+                26,"Reserved27",
+                27,"Reserved28",
+                28,"Reserved29",
+                29,"Reserved30",
+                30,"Reserved31",
+                31,"Reserved32";
+        Param3 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC3,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Handshake Counter - Outputs",    $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param4 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[0] - Outputs",     $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param5 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[1] - Outputs",     $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param6 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[2] - Outputs",     $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param7 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[3] - Outputs",     $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param8 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[0] - Outputs",  $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param9 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[1] - Outputs",  $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[2] - Outputs",  $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param11 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[3] - Outputs",  $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "VALUE - Outputs",      $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param30 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Laser status",         $ name
+                "",                     $ units
+                "TruMark -> field bus", $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum30 =
+                0,"Laser",
+                1,"Laser ready",
+                2,"SIK",
+                3,"Shutter",
+                4,"Beam expander",
+                5,"Laser monitoring",
+                6,"Laser malfunction",
+                7,"Pilot laser status",
+                8,"Laser warning lamp",
+                9,"Q switch trigger",
+                10,"Switch off the control yourself",
+                11,"Key switch, laser disable",
+                12,"EMERGENCY STOP",
+                13,"Laser heating phase",
+                14,"Control unit",
+                15,"Mark active",
+                16,"Conversion is only available after TruMark",
+                17,"Reserved17",
+                18,"Reserved18",
+                19,"Reserved19",
+                20,"Reserved20",
+                21,"Reserved21",
+                22,"Reserved22",
+                23,"Reserved23",
+                24,"Reserved24",
+                25,"Reserved25",
+                26,"Reserved26",
+                27,"Reserved27",
+                28,"Reserved28",
+                29,"Reserved29",
+                30,"Reserved30",
+                31,"Reserved31";
+        Param31 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xD3,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "Digital inputs",       $ name
+                "",                     $ units
+                "TruMark -> field bus", $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum31 =
+                0,"E1 (used for TruTops Mark)",
+                1,"E2  (used for TruTops Mark)",
+                2,"E3  (used for TruTops Mark)",
+                3,"E4  (used for TruTops Mark)",
+                4,"E5  (used for TruTops Mark)",
+                5,"E6  (used for TruTops Mark)",
+                6,"E7  (used for TruTops Mark)",
+                7,"E8  (used for TruTops Mark)",
+                8,"E9  (used for TruTops Mark)",
+                9,"E10",
+                10,"E11",
+                11,"E12",
+                12,"E13",
+                13,"E14",
+                14,"E15  (used for TruTops Mark)",
+                15,"E16  (used for TruTops Mark)",
+                16,"E17",
+                17,"E18",
+                18,"E19",
+                19,"E20",
+                20,"E21",
+                21,"E22",
+                22,"E23",
+                23,"E24",
+                24,"Reserved25",
+                25,"Reserved26",
+                26,"Reserved26",
+                27,"Reserved27",
+                28,"Reserved28",
+                29,"Reserved29",
+                30,"Reserved30",
+                31,"Reserved31";
+        Param32 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC3,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Handshake Counter - Inputs",    $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param33 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[0] - Inputs",      $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param34 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[1] - Inputs",      $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param35 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[2] - Inputs",      $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param36 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TAG[3] - Inputs",      $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param37 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[0] - Inputs",   $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param38 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[1] - Inputs",   $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param39 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[2] - Inputs",   $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param40 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "LENGTH[3] - Inputs",   $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param41 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC2,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "VALUE - Inputs",       $ name
+                "",                     $ units
+                "",                     $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param60 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RPI Range",            $ name
+                "micro second",         $ units
+                "Supported RPI range",  $ help string
+                1000,100000,2000,       $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param81 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Assembly Size Output TLV",    $ name
+                "",                     $ units
+                "",                     $ help string
+                144,144,144,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param82 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Assembly Size Input TLV",    $ name
+                "",                     $ units
+                "",                     $ help string
+                144,144,144,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param83 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Output TLV",    $ name
+                "",                     $ units
+                "",                     $ help string
+                100,100,100,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param84 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Input TLV",    $ name
+                "",                     $ units
+                "",                     $ help string
+                150,150,150,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param85 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Listen Only TLV",    $ name
+                "",                     $ units
+                "",                     $ help string
+                192,192,192,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param86 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Assembly Instance Input Only TLV",    $ name
+                "",                     $ units
+                "",                     $ help string
+                193,193,193,            $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+[Groups]
+        Group1 =
+                "Output TLV",
+                11,
+                1,2,3,4,5,6,7,8,9,10,
+                11;
+        Group2 =
+                "Input TLV",
+                11,
+                30,31,32,33,34,35,36,37,38,39,
+                40;
+
+[Assembly]
+        Object_Name = "Assembly Object";
+        Object_Class_Code = 0x04;
+        Assem100 =
+                $ Includes Measuring Block (Floating Point) and Status Block
+                "Output TLV",
+                "20 04 24 64 30 03",
+                144,
+                0x0000,
+                ,,
+                32,Param1,
+                32,Param2,
+                16,Param3,
+                8,Param4,
+                8,Param5,
+                8,Param6,
+                8,Param7,
+                8,Param8,
+                8,Param9,
+                8,Param10,
+                8,Param11,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12,
+                8,Param12;
+        Assem150 =
+                $ Includes Measuring and Status Data
+                "Input TLV",
+                "20 04 24 96 30 03",
+                144,
+                0x0000,
+                ,,
+                32,Param30,
+                32,Param31,
+                16,Param32,
+                8,Param33,
+                8,Param34,
+                8,Param35,
+                8,Param36,
+                8,Param37,
+                8,Param38,
+                8,Param39,
+                8,Param40,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41,
+                8,Param41;
+
+[Connection Manager]
+        Revision = 1;
+        Object_Name = "Connection Manager Object";
+        Object_Class_Code = 0x06;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+
+        Connection1 =
+                0x04010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44640405,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                Param60,Param81,Assem100,    $ O->T RPI, size, format
+                Param60,Param82,Assem150,    $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,,                      $ target config size, format
+                "I/O TLV",              $ Connection Name
+                "",                     $ help string
+                "20 04 2C [Param83] 2C [Param84]";    $ Path
+        Connection2 =
+                0x01010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44240305,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,0,,                    $ O->T RPI, size, format
+                Param60,Param82,Assem150,    $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,,                      $ target config size, format
+                "Listen Only TLV",      $ Connection Name
+                "",                     $ help string
+                "20 04 2C [Param85] 2C [Param84]";    $ Path
+        Connection3 =
+                0x02010002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44640305,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,0,,                    $ O->T RPI, size, format
+                Param60,Param82,Assem150,    $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,,                      $ target config size, format
+                "Input Only TLV",       $ Connection Name
+                "",                     $ help string
+                "20 04 2C [Param86] 2C [Param84]";    $ Path
+
+[Capacity]
+
+        ConnOverhead = .004;            $ Connection Overhead
+    $ The sum of I/O- and Explicit Messaging Connections must not exceed 8.
+        MaxIOConnections = 8;           $ Maximum number of Class 1 Connections
+    $ The sum of I/O- and Explicit Messaging Connections must not exceed 8.
+        MaxMsgConnections = 8;          $ Maximum number of Class 3 Connections
+        TSpec1 = TxRx, 10, 4000;        $ packets per sec @ 10 bytes
+        TSpec2 = TxRx, 504, 3000;       $ packets per sec @ 504 bytes
+
+[DLR Class]
+        Revision = 3;
+        Object_Name = "Device Level Ring Object";
+        Object_Class_Code = 0x47;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+        Ring_Supervisor_Capable = No;
+
+[TCP/IP Interface Class]
+        Revision = 4;
+        Object_Name = "TCP/IP Interface Object";
+        Object_Class_Code = 0xF5;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+
+[Ethernet Link Class]
+        Revision = 4;
+        Object_Name = "Ethernet Link Object";
+        Object_Class_Code = 0xF6;
+        MaxInst = 2;
+        Number_Of_Static_Instances = 2;
+        Max_Number_Of_Dynamic_Instances = 0;
+        InterfaceLabel1 = "port1";
+        InterfaceLabel2 = "port2";
+
+$ ****************************************************************************
+$ EOF
+$ ****************************************************************************

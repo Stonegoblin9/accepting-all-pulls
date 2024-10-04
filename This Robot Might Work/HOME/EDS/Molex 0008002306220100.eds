@@ -1,0 +1,3536 @@
+$ EZ-EDS Version 3.11 (Beta, May-09, 2012) Generated Electronic Data Sheet
+
+[File]
+        DescText = "EDS for BradControl TCDEC-8B4P-DYU-G ";
+        CreateDate = 11-25-2014;
+        CreateTime = 09:22:19;
+        ModDate = 12-01-2015;
+        ModTime = 17:05:23;
+        Revision = 1.1;
+        HomeURL = "www.molex.com";
+        EDSFileCRC = 0x9D9DA481;
+
+[Device]
+        VendCode = 8;
+        VendName = "Molex Incorporated";
+        ProdType = 35;
+        ProdTypeStr = "Safety Discrete I/O Device";
+        ProdCode = 1570;
+        MajRev = 1;
+        MinRev = 2;
+        ProdName = "TCDEC-8B4P-DYU-G";
+        Catalog = "TCDEC-8B4P-DYU-G";
+        Icon = "HarshIO_S.ico";
+
+[Device Classification]
+        Class1 = EtherNetIP;
+        Class2 = Safety;
+
+[ParamClass]
+        MaxInst = 1;
+        Descriptor = 0x0009;
+        CfgAssembly = 0;
+        SafetyCfgAssembly = 770;
+
+[Params]
+        Param1 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "EPI",                  $ name
+                "탎",                   $ units
+                "EPI value",            $ help string
+                10000,500000,30000,     $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param2 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC8,                   $ Data Type
+                4,                      $ Data Size in bytes
+                "RPI",                  $ name
+                "탎",                   $ units
+                "RPI value",            $ help string
+                10000,500000,30000,     $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10 =
+                0,                      $ reserved, shall equal 0
+                6,"20 F5 24 01 30 02",  $ Link Path Size, Link Path
+                0x0010,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "TCP/IP Object Capabilities",    $ name
+                "",                     $ units
+                "Capabilities of the object TCP/IP",    $ help string
+                ,,180,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param1020 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI0",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1020 =
+                0,"OFF",
+                1,"ON";
+        Param1021 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI1",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1021 =
+                0,"OFF",
+                1,"ON";
+        Param1022 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI2",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1022 =
+                0,"OFF",
+                1,"ON";
+        Param1023 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI3",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1023 =
+                0,"OFF",
+                1,"ON";
+        Param1024 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 05 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI4",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1024 =
+                0,"OFF",
+                1,"ON";
+        Param1025 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 06 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI5",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1025 =
+                0,"OFF",
+                1,"ON";
+        Param1026 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 07 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI6",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1026 =
+                0,"OFF",
+                1,"ON";
+        Param1027 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 08 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI7",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1027 =
+                0,"OFF",
+                1,"ON";
+        Param1028 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 09 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI8",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1028 =
+                0,"OFF",
+                1,"ON";
+        Param1029 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0A 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI9",                  $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1029 =
+                0,"OFF",
+                1,"ON";
+        Param1030 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0B 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI10",                 $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1030 =
+                0,"OFF",
+                1,"ON";
+        Param1031 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0C 30 07",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SI11",                 $ name
+                "",                     $ units
+                "Value of safety input point",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1031 =
+                0,"OFF",
+                1,"ON";
+        Param1040 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS0",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1040 =
+                0,"ALARM",
+                1,"OK";
+        Param1041 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS1",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1041 =
+                0,"ALARM",
+                1,"OK";
+        Param1042 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS2",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1042 =
+                0,"ALARM",
+                1,"OK";
+        Param1043 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS3",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1043 =
+                0,"ALARM",
+                1,"OK";
+        Param1044 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 05 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS4",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1044 =
+                0,"ALARM",
+                1,"OK";
+        Param1045 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 06 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS5",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1045 =
+                0,"ALARM",
+                1,"OK";
+        Param1046 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 07 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS6",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1046 =
+                0,"ALARM",
+                1,"OK";
+        Param1047 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 08 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS7",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1047 =
+                0,"ALARM",
+                1,"OK";
+        Param1048 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 09 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS8",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1048 =
+                0,"ALARM",
+                1,"OK";
+        Param1049 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0A 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS9",                 $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1049 =
+                0,"ALARM",
+                1,"OK";
+        Param1050 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0B 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS10",                $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1050 =
+                0,"ALARM",
+                1,"OK";
+        Param1051 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0C 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SIS11",                $ name
+                "",                     $ units
+                "Value of Individual Safety Input Status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1051 =
+                0,"ALARM",
+                1,"OK";
+        Param1060 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 01 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO0",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1060 =
+                0,"OFF",
+                1,"ON";
+        Param1061 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 02 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO1",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1061 =
+                0,"OFF",
+                1,"ON";
+        Param1062 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 03 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO2",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1062 =
+                0,"OFF",
+                1,"ON";
+        Param1063 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 04 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO3",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1063 =
+                0,"OFF",
+                1,"ON";
+        Param1064 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 05 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO4",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1064 =
+                0,"OFF",
+                1,"ON";
+        Param1065 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 06 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO5",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1065 =
+                0,"OFF",
+                1,"ON";
+        Param1066 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 07 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO6",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1066 =
+                0,"OFF",
+                1,"ON";
+        Param1067 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 08 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO7",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1067 =
+                0,"OFF",
+                1,"ON";
+        Param1068 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 09 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO8",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1068 =
+                0,"OFF",
+                1,"ON";
+        Param1069 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0A 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO9",                  $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1069 =
+                0,"OFF",
+                1,"ON";
+        Param1070 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0B 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO10",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1070 =
+                0,"OFF",
+                1,"ON";
+        Param1071 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0C 30 01",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TO11",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Value",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1071 =
+                0,"OFF",
+                1,"ON";
+
+        Param1080 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 01 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS0",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1080 =
+                0,"ALARM",
+                1,"OK";
+
+        Param1081 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 02 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS1",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1081 =
+                0,"ALARM",
+                1,"OK";
+        Param1082 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 03 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS2",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1082 =
+                0,"ALARM",
+                1,"OK";
+        Param1083 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 04 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS3",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1083 =
+                0,"ALARM",
+                1,"OK";
+        Param1084 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 05 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS4",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1084 =
+                0,"ALARM",
+                1,"OK";
+        Param1085 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 06 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS5",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1085 =
+                0,"ALARM",
+                1,"OK";
+        Param1086 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 07 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS6",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1086 =
+                0,"ALARM",
+                1,"OK";
+        Param1087 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 08 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS7",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1087 =
+                0,"ALARM",
+                1,"OK";
+        Param1088 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 09 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS8",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1088 =
+                0,"ALARM",
+                1,"OK";
+        Param1089 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0A 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS9",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1089 =
+                0,"ALARM",
+                1,"OK";
+        Param1090 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0B 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS10",                $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1090 =
+                0,"ALARM",
+                1,"OK";
+        Param1091 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0C 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "TOS11",                $ name
+                "",                     $ units
+                "Value of Test Ouput Status",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1091 =
+                0,"ALARM",
+                1,"OK";
+
+        Param1100 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOM0",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Monitor",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1100 =
+                0,"OFF",
+                1,"ON";
+
+        Param1101 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOM1",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Monitor",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1101 =
+                0,"OFF",
+                1,"ON";
+        Param1102 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOM2",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Monitor",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1102 =
+                0,"OFF",
+                1,"ON";
+        Param1103 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 04",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOM3",                 $ name
+                "",                     $ units
+                "Value of Test Ouput Monitor",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1103 =
+                0,"OFF",
+                1,"ON";
+
+        Param1120 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 05",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOS0",                 $ name
+                "",                     $ units
+                "Value of Ouput Status",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1120 =
+                0,"ALARM",
+                1,"OK";
+
+        Param1121 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 05",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOS1",                 $ name
+                "",                     $ units
+                "Value of Ouput Status",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1121 =
+                0,"ALARM",
+                1,"OK";
+        Param1122 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 05",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOS2",                 $ name
+                "",                     $ units
+                "Value of Ouput Status",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1122 =
+                0,"ALARM",
+                1,"OK";
+        Param1123 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 05",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SOS3",                 $ name
+                "",                     $ units
+                "Value of Ouput Status",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1123 =
+                0,"ALARM",
+                1,"OK";
+        Param1140 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 01 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SO0",                  $ name
+                "",                     $ units
+                "Value of Safety Ouput",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1140 =
+                0,"OFF",
+                1,"ON";
+        Param1141 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 02 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SO1",                  $ name
+                "",                     $ units
+                "Value of Safety Ouput",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1141 =
+                0,"OFF",
+                1,"ON";
+        Param1142 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 03 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SO2",                  $ name
+                "",                     $ units
+                "Value of Safety Ouput",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1142 =
+                0,"OFF",
+                1,"ON";
+        Param1143 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 04 30 03",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "SO3",                  $ name
+                "",                     $ units
+                "Value of Safety Ouput",$ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1143 =
+                0,"OFF",
+                1,"ON";
+
+        Param1160 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3E 24 01 30 05",  $ Link Path Size, Link Path
+                0x0032,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Combined Input Status",$ name
+                "",                     $ units
+                "Value of combined Input status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1160 =
+                0,"ALARM",
+                1,"OK";
+        Param1161 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Muting Lamp Status 3", $ name
+                "",                     $ units
+                "Muting Lamp Status",   $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1161 =
+                0,"ALARM",
+                1,"OK";
+        Param1162 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Muting Lamp Status 7", $ name
+                "",                     $ units
+                "Muting Lamp Status",   $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1162 =
+                0,"ALARM",
+                1,"OK";
+        Param1163 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input Power Error",    $ name
+                "",                     $ units
+                "Input Power Error",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1163 =
+                0,"ALARM",
+                1,"OK";
+        Param1164 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output Power Error",   $ name
+                "",                     $ units
+                "Output Power Error",   $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1164 =
+                0,"ALARM",
+                1,"OK";
+        Param1165 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input Power Over Current Error",    $ name
+                "",                     $ units
+                "Input Power over current Error",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1165 =
+                0,"ALARM",
+                1,"OK";
+        Param1166 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output Power Over Current Error",    $ name
+                "",                     $ units
+                "Output Power over current Error",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1166 =
+                0,"ALARM",
+                1,"OK";
+        Param1167 =
+                0,                      $ reserved, shall equal 0
+                ,,                      $ Link Path Size, Link Path
+                0x0012,                 $ Descriptor
+                0xC1,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Combined Output Status",    $ name
+                "",                     $ units
+                "Value of combined Output status",    $ help string
+                0,1,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum1167 =
+                0,"ALARM",
+                1,"OK";
+
+        Param10200 =
+                0,                      $ reserved, shall equal 0
+                6,"20 81 24 01 30 01",  $ Link Path Size, Link Path
+                0x0210,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Config Assembly Major Version",    $ name
+                "",                     $ units
+                "Config Assembly Major Version",    $ help string
+                1,255,1,                $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10201 =
+                0,                      $ reserved, shall equal 0
+                6,"20 81 24 01 30 02",  $ Link Path Size, Link Path
+                0x0210,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Config Assembly Minor Version",    $ name
+                "",                     $ units
+                "Config Assembly Minor Version",    $ help string
+                1,255,1,                $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10300 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 01 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 0 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10300 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10301 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 02 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 1 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10301 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10302 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 03 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 2 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10302 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10303 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 04 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 3 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,4,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10303 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply",
+                4,"Muting Lamp";
+        Param10304 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 05 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 4 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10304 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10305 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 06 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 5 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10305 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10306 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 07 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 6 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10306 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10307 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 08 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 7 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,4,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10307 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply",
+                4,"Muting Lamp";
+        Param10308 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 09 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 8 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10308 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10309 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0A 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 9 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10309 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10310 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0B 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 10 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10310 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10311 =
+                0,                      $ reserved, shall equal 0
+                6,"20 82 24 0C 30 02",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Test Pulse Output 11 Mode",    $ name
+                "",                     $ units
+                "Test Pulse Output Mode",    $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10311 =
+                0,"Not Used",
+                1,"Standard Output",
+                2,"Test Output",
+                3,"Power Supply";
+        Param10312 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 00 30 08",  $ Link Path Size, Link Path
+                0x0004,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Output Latch Error Time",    $ name
+                "x10 ms",               $ units
+                "Latch any Safety Output error for this minimum time (10ms units)",    $ help string
+                0,65530,1000,           $ min, max, default data values
+                1,10,1,0,               $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                0;                      $ decimal places
+        Param10320 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 01 30 06",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 0 Mode",        $ name
+                "",                     $ units
+                "Output Channel Mode",  $ help string
+                0,2,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10320 =
+                0,"Not Used",
+                1,"Safety",
+                2,"Safety Pulse Test";
+        Param10321 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 02 30 06",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 1 Mode",        $ name
+                "",                     $ units
+                "Output Channel Mode",  $ help string
+                0,2,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10321 =
+                0,"Not Used",
+                1,"Safety",
+                2,"Safety Pulse Test";
+        Param10322 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 03 30 06",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 2 Mode",        $ name
+                "",                     $ units
+                "Output Channel Mode",  $ help string
+                0,2,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10322 =
+                0,"Not Used",
+                1,"Safety",
+                2,"Safety Pulse Test";
+        Param10323 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 04 30 06",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 3 Mode",        $ name
+                "",                     $ units
+                "Output Channel Mode",  $ help string
+                0,2,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10323 =
+                0,"Not Used",
+                1,"Safety",
+                2,"Safety Pulse Test";
+        Param10324 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 01 30 64",  $ Link Path Size, Link Path
+                0x0004,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 0 Test Pulse Width",    $ name
+                "탎",                   $ units
+                "Output Test Pulse Width (100 탎 units)",    $ help string
+                3,100,5,                $ min, max, default data values
+                100,1,1,0,              $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10325 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 02 30 64",  $ Link Path Size, Link Path
+                0x0004,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 1 Test Pulse Width",    $ name
+                "탎",                   $ units
+                "Output Test Pulse Width (100 탎 units)",    $ help string
+                3,100,5,                $ min, max, default data values
+                100,1,1,0,              $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10326 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 03 30 64",  $ Link Path Size, Link Path
+                0x0004,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 2 Test Pulse Width",    $ name
+                "탎",                   $ units
+                "Output Test Pulse Width (100 탎 units)",    $ help string
+                3,100,5,                $ min, max, default data values
+                100,1,1,0,              $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10327 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3B 24 04 30 64",  $ Link Path Size, Link Path
+                0x0004,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 3 Test Pulse Width",    $ name
+                "탎",                   $ units
+                "Output Test Pulse Width (100 탎 units)",    $ help string
+                3,100,5,                $ min, max, default data values
+                100,1,1,0,              $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param10328 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3F 24 01 30 03",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 0/1 Operation Type",    $ name
+                "",                     $ units
+                "Dual Safe Output Mode",$ help string
+                0,1,1,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10328 =
+                0,"Single",
+                1,"Dual";
+        Param10329 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3F 24 02 30 03",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Output 2/3 Operation Type",    $ name
+                "",                     $ units
+                "Dual Safe Output Mode",$ help string
+                0,1,1,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10329 =
+                0,"Single",
+                1,"Dual";
+        Param10330 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 00 30 08",  $ Link Path Size, Link Path
+                0x0004,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input Latch Error Time ",    $ name
+                "x10 ms",               $ units
+                "Latch Safety Input error for this min. time (10ms units)",    $ help string
+                0,65530,1000,           $ min, max, default data values
+                1,10,1,0,               $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Param10334 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 0 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10334 =
+                0,"None",
+                1,"Test Output 0",
+                2,"Test Output 1";
+
+
+        Param10338 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 1 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10338 =
+                0,"None",
+                1,"Test Output 0",
+                2,"Test Output 1";
+
+
+        Param10342 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 2 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10342 =
+                0,"None",
+                3,"Test Output 2",
+                4,"Test Output 3";
+
+
+
+
+        Param10346 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 3 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10346 =
+                0,"None",
+                3,"Test Output 2",
+                4,"Test Output 3";
+
+        Param10350 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 05 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 4 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10350 =
+                0,"None",
+                5,"Test Output 4",
+                6,"Test Output 5";
+
+
+        Param10354 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 06 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 5 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10354 =
+                0,"None",
+                5,"Test Output 4",
+                6,"Test Output 5";
+
+        Param10358 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 07 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 6 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10358 =
+                0,"None",
+                7,"Test Output 6",
+                8,"Test Output 7";
+
+
+
+        Param10362 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 08 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 7 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10362 =
+                0,"None",
+                7,"Test Output 6",
+                8,"Test Output 7";
+
+        Param10366 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 09 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 8 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10366 =
+                0,"None",
+                9,"Test Output 8",
+                10,"Test Output 9";
+
+
+        Param10370 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0A 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 9 Test Source",  $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10370 =
+                0,"None",
+                9,"Test Output 8",
+                10,"Test Output 9";
+
+
+        Param10374 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0B 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 10 Test Source", $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10374 =
+                0,"None",
+                11,"Test Output 10",
+                12,"Test Output 11";
+
+
+        Param10378 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0C 30 64",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 11 Test Source", $ name
+                "",                     $ units
+                "Test output used with this Input",    $ help string
+                ,,0,                    $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum10378 =
+                0,"None",
+                11,"Test Output 10",
+                12,"Test Output 11";
+
+        Param11331 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 0 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11331 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11335 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 1 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11335 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11339 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 2 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11339 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11343 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 3 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11343 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11347 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 05 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 4 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11347 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11351 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 06 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 5 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11351 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11355 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 07 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 6 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11355 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11359 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 08 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 7 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11359 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11363 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 09 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 8 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11363 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11367 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0A 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 9 Mode",         $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11367 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11371 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0B 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 10 Mode",        $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11371 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+        Param11375 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0C 30 08",  $ Link Path Size, Link Path
+                0x0002,                 $ Descriptor
+                0xC6,                   $ Data Type
+                1,                      $ Data Size in bytes
+                "Input 11 Mode",        $ name
+                "",                     $ units
+                "Input Point Mode",     $ help string
+                0,3,0,                  $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Enum11375 =
+                0,"Not Used",
+                1,"Safety Pulse Test",
+                2,"Safety",
+                3,"Standard";
+
+
+
+
+
+
+
+
+        Param12332 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 0 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12336 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 1 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param12340 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 2 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param12344 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 3 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param12348 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 05 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 4 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12352 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 06 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 5 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12356 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 07 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 6 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12360 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 08 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 7 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12364 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 09 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 8 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12368 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0A 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 9 Off->On Delay",$ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12372 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0B 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 10 Off->On Delay",    $ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param12376 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0C 30 05",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 11 Off->On Delay",    $ name
+                "ms",                   $ units
+                "Filter time for Off -> On transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+
+
+
+        Param13333 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 01 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 0 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13337 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 02 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 1 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13341 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 03 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 2 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13345 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 04 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 3 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13349 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 05 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 4 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param13353 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 06 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 5 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param13357 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 07 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 6 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13361 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 08 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 7 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13365 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 09 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 8 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13369 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0A 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 9 On->Off Delay",$ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+        Param13373 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0B 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 10 On->Off Delay",    $ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+        Param13377 =
+                0,                      $ reserved, shall equal 0
+                6,"20 3D 24 0C 30 06",  $ Link Path Size, Link Path
+                0x0000,                 $ Descriptor
+                0xC7,                   $ Data Type
+                2,                      $ Data Size in bytes
+                "Input 11 On->Off Delay",    $ name
+                "ms",                   $ units
+                "Filter time for On -> Off transition",    $ help string
+                0,1000,0,               $ min, max, default data values
+                ,,,,                    $ mult, div, base, offset scaling
+                ,,,,                    $ mult, div, base, offset links
+                ;                       $ decimal places
+
+
+
+        Param14379 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 01 30 01",  $ path size
+                                        $ path
+                0x0002,                 $ descriptor
+                0xC6,                   $ data type=USINT
+                1,                      $ data size=1byte
+                "Input 0/1 Operation Type",    $ name
+                "",                     $ unit
+                "Selects the mode for the two channels of the dual channel input.",    $ Help string
+                0,2,0,                  $ min/ max/ default
+                ,,,,                    $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Enum14379 =
+                0,"Single",
+                1,"Equivalent",
+                2,"Complementary";
+        Param14381 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 02 30 01",  $ path size
+                                        $ path
+                0x0002,                 $ descriptor
+                0xC6,                   $ data type=USINT
+                1,                      $ data size=1byte
+                "Input 2/3 Operation Type",    $ name
+                "",                     $ unit
+                "Selects the mode for the two channels of the dual channel input.",    $ Help string
+                0,2,0,                  $ min/ max/ default
+                ,,,,                    $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Enum14381 =
+                0,"Single",
+                1,"Equivalent",
+                2,"Complementary";
+        Param14383 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 03 30 01",  $ path size
+                                        $ path
+                0x0002,                 $ descriptor
+                0xC6,                   $ data type=USINT
+                1,                      $ data size=1byte
+                "Input 4/5 Operation Type",    $ name
+                "",                     $ unit
+                "Selects the mode for the two channels of the dual channel input.",    $ Help string
+                0,2,0,                  $ min/ max/ default
+                ,,,,                    $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Enum14383 =
+                0,"Single",
+                1,"Equivalent",
+                2,"Complementary";
+        Param14385 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 04 30 01",  $ path size
+                                        $ path
+                0x0002,                 $ descriptor
+                0xC6,                   $ data type=USINT
+                1,                      $ data size=1byte
+                "Input 6/7 Operation Type",    $ name
+                "",                     $ unit
+                "Selects the mode for the two channels of the dual channel input.",    $ Help string
+                0,2,0,                  $ min/ max/ default
+                ,,,,                    $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Enum14385 =
+                0,"Single",
+                1,"Equivalent",
+                2,"Complementary";
+        Param14387 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 05 30 01",  $ path size
+                                        $ path
+                0x0002,                 $ descriptor
+                0xC6,                   $ data type=USINT
+                1,                      $ data size=1byte
+                "Input 8/9 Operation Type",    $ name
+                "",                     $ unit
+                "Selects the mode for the two channels of the dual channel input.",    $ Help string
+                0,2,0,                  $ min/ max/ default
+                ,,,,                    $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Enum14387 =
+                0,"Single",
+                1,"Equivalent",
+                2,"Complementary";
+        Param14389 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 06 30 01",  $ path size
+                                        $ path
+                0x0002,                 $ descriptor
+                0xC6,                   $ data type=USINT
+                1,                      $ data size=1byte
+                "Input 10/11 Operation Type",    $ name
+                "",                     $ unit
+                "Selects the mode for the two channels of the dual channel input.",    $ Help string
+                0,2,0,                  $ min/ max/ default
+                ,,,,                    $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Enum14389 =
+                0,"Single",
+                1,"Equivalent",
+                2,"Complementary";
+
+
+        Param15380 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 01 30 02",  $ path size
+                                        $ path
+                0x0004,                 $ descriptor
+                0xC7,                   $ data type=UINT
+                2,                      $ data size=2byte
+                "Input 0/1 Operation Discrepancy Time",    $ name
+                "x10 ms",               $ unit
+                "The time at which a discrepancy becomes an error (In 10ms units)",    $ Help string
+                10,30000,10,            $ min/ max/ default
+                1,10,1,0,               $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Param15382 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 02 30 02",  $ path size
+                                        $ path
+                0x0004,                 $ descriptor
+                0xC7,                   $ data type=UINT
+                2,                      $ data size=2byte
+                "Input 2/3 Operation Discrepancy Time",    $ name
+                "x10 ms",               $ unit
+                "The time at which a discrepancy becomes an error (In 10ms units)",    $ Help string
+                10,30000,10,            $ min/ max/ default
+                1,10,1,0,               $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Param15384 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 03 30 02",  $ path size
+                                        $ path
+                0x0004,                 $ descriptor
+                0xC7,                   $ data type=UINT
+                2,                      $ data size=2byte
+                "Input 4/5 Operation Discrepancy Time",    $ name
+                "x10 ms",               $ unit
+                "The time at which a discrepancy becomes an error (In 10ms units)",    $ Help string
+                10,30000,10,            $ min/ max/ default
+                1,10,1,0,               $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Param15386 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 04 30 02",  $ path size
+                                        $ path
+                0x0004,                 $ descriptor
+                0xC7,                   $ data type=UINT
+                2,                      $ data size=2byte
+                "Input 6/7 Operation Discrepancy Time",    $ name
+                "x10 ms",               $ unit
+                "The time at which a discrepancy becomes an error (In 10ms units)",    $ Help string
+                10,30000,10,            $ min/ max/ default
+                1,10,1,0,               $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Param15388 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 05 30 02",  $ path size
+                                        $ path
+                0x0004,                 $ descriptor
+                0xC7,                   $ data type=UINT
+                2,                      $ data size=2byte
+                "Input 8/9 Operation Discrepancy Time",    $ name
+                "x10 ms",               $ unit
+                "The time at which a discrepancy becomes an error (In 10ms units)",    $ Help string
+                10,30000,10,            $ min/ max/ default
+                1,10,1,0,               $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+        Param15390 =
+                0,                      $ shall Equal 0
+                6,"20 80 24 06 30 02",  $ path size
+                                        $ path
+                0x0004,                 $ descriptor
+                0xC7,                   $ data type=UINT
+                2,                      $ data size=2byte
+                "Input 10/11 Operation Discrepancy Time",    $ name
+                "x10 ms",               $ unit
+                "The time at which a discrepancy becomes an error (In 10ms units)",    $ Help string
+                10,30000,10,            $ min/ max/ default
+                1,10,1,0,               $ mult/ div /base/ offset scaling
+                ,,,,                    $ mult/ div /base/ offset links not used
+                0;                      $ decimal places
+
+[Groups]
+        Group1 =
+                "General",
+                2,
+                10330,10312;
+        Group2 =
+                "Input Points 0/1",
+                12,
+                14379,15380,11331,10334,10300,12332,13333,11335,10338,10301,
+                12336,13337;
+        Group3 =
+                "Input Points 2/3",
+                12,
+                14381,15382,11339,10342,10302,12340,13341,11343,10346,10303,
+                12344,13345;
+        Group4 =
+                "Input Points 4/5",
+                12,
+                14383,15384,11347,10350,10304,12348,13349,11351,10354,10305,
+                12352,13353;
+        Group5 =
+                "Input Points 6/7",
+                12,
+                14385,15386,11355,10358,10306,12356,13357,11359,10362,10307,
+                12360,13361;
+        Group6 =
+                "Input Points 8/9",
+                12,
+                14387,15388,11363,10366,10308,12364,13365,11367,10370,10309,
+                12368,13369;
+        Group7 =
+                "Input Points 10/11",
+                12,
+                14389,15390,11371,10374,10310,12372,13373,11375,10378,10311,
+                12376,13377;
+        Group8 =
+                "Output  Points 0/1",
+                5,
+                10328,10320,10324,10321,10325;
+        Group9 =
+                "Output  Points 2/3",
+                5,
+                10329,10322,10326,10323,10327;
+
+[Assembly]
+        Assem524 =
+                "Safety Input",
+                "20 04 25 00 0C 02 30 03",
+                2,
+                0x0000,
+                ,,
+                1,Param1020,
+                1,Param1021,
+                1,Param1022,
+                1,Param1023,
+                1,Param1024,
+                1,Param1025,
+                1,Param1026,
+                1,Param1027,
+                1,Param1028,
+                1,Param1029,
+                1,Param1030,
+                1,Param1031,
+                4,;
+        Assem540 =
+                "Safety Input + Combined Status",
+                "20 04 25 00 1C 02 30 03",
+                2,
+                0x0000,
+                ,,
+                1,Param1020,
+                1,Param1021,
+                1,Param1022,
+                1,Param1023,
+                1,Param1024,
+                1,Param1025,
+                1,Param1026,
+                1,Param1027,
+                1,Param1028,
+                1,Param1029,
+                1,Param1030,
+                1,Param1031,
+                3,,
+                1,Param1160;
+        Assem556 =
+                "Safety Input + SI Pt. Status",
+                "20 04 25 00 2C 02 30 03",
+                3,
+                0x0000,
+                ,,
+                1,Param1020,
+                1,Param1021,
+                1,Param1022,
+                1,Param1023,
+                1,Param1024,
+                1,Param1025,
+                1,Param1026,
+                1,Param1027,
+                1,Param1028,
+                1,Param1029,
+                1,Param1030,
+                1,Param1031,
+                1,Param1040,
+                1,Param1041,
+                1,Param1042,
+                1,Param1043,
+                1,Param1044,
+                1,Param1045,
+                1,Param1046,
+                1,Param1047,
+                1,Param1048,
+                1,Param1049,
+                1,Param1050,
+                1,Param1051;
+        Assem563 =
+                "Safety Output",
+                "20 04 25 00 33 02 30 03",
+                1,
+                0x0000,
+                ,,
+                1,Param1140,
+                1,Param1141,
+                1,Param1142,
+                1,Param1143,
+                4,;
+        Assem579 =
+                "Safety Output Status",
+                "20 04 25 00 43 02 30 03",
+                1,
+                0x0000,
+                ,,
+                1,Param1120,
+                1,Param1121,
+                1,Param1122,
+                1,Param1123,
+                4,;
+        Assem604 =
+                "Safety Input + SI, SO Combined Status",
+                "20 04 25 00 5C 02 30 03",
+                2,
+                0x0000,
+                ,,
+                1,Param1020,
+                1,Param1021,
+                1,Param1022,
+                1,Param1023,
+                1,Param1024,
+                1,Param1025,
+                1,Param1026,
+                1,Param1027,
+                1,Param1028,
+                1,Param1029,
+                1,Param1030,
+                1,Param1031,
+                2,,
+                1,Param1167,
+                1,Param1160;
+        Assem636 =
+                "Safety Input + SI Combined Status + Safety Output",
+                "20 04 25 00 7C 02 30 03",
+                3,
+                0x0000,
+                ,,
+                1,Param1020,
+                1,Param1021,
+                1,Param1022,
+                1,Param1023,
+                1,Param1024,
+                1,Param1025,
+                1,Param1026,
+                1,Param1027,
+                1,Param1028,
+                1,Param1029,
+                1,Param1030,
+                1,Param1031,
+                3,,
+                1,Param1160,
+                1,Param1120,
+                1,Param1121,
+                1,Param1122,
+                1,Param1123;
+        Assem768 =
+                "Input Global",
+                "20 04 25 00 00 03 30 03",
+                13,
+                0x0000,
+                ,,
+                1,Param1020,
+                1,Param1021,
+                1,Param1022,
+                1,Param1023,
+                1,Param1024,
+                1,Param1025,
+                1,Param1026,
+                1,Param1027,
+                1,Param1028,
+                1,Param1029,
+                1,Param1030,
+                1,Param1031,
+                4,,
+                1,Param1040,
+                1,Param1041,
+                1,Param1042,
+                1,Param1043,
+                1,Param1044,
+                1,Param1045,
+                1,Param1046,
+                1,Param1047,
+                1,Param1048,
+                1,Param1049,
+                1,Param1050,
+                1,Param1051,
+                4,,
+                1,Param1060,
+                1,Param1061,
+                1,Param1062,
+                1,Param1063,
+                1,Param1064,
+                1,Param1065,
+                1,Param1066,
+                1,Param1067,
+                1,Param1068,
+                1,Param1069,
+                1,Param1070,
+                1,Param1071,
+                4,,
+                1,Param1080,
+                1,Param1081,
+                1,Param1082,
+                1,Param1083,
+                1,Param1084,
+                1,Param1085,
+                1,Param1086,
+                1,Param1087,
+                1,Param1088,
+                1,Param1089,
+                1,Param1090,
+                1,Param1091,
+                4,,
+                1,Param1100,
+                1,Param1101,
+                1,Param1102,
+                1,Param1103,
+                12,,
+                1,Param1120,
+                1,Param1121,
+                1,Param1122,
+                1,Param1123,
+                12,,
+                1,Param1164,
+                1,Param1163,
+                1,Param1167,
+                1,Param1160,
+                1,Param1161,
+                1,Param1162,
+                1,Param1166,
+                1,Param1165;
+        Assem769 =
+                "Output Global",
+                "20 04 25 00 01 03 30 03",
+                4,
+                0x0000,
+                ,,
+                1,Param1140,
+                1,Param1141,
+                1,Param1142,
+                1,Param1143,
+                12,,
+                1,Param1060,
+                1,Param1061,
+                1,Param1062,
+                1,Param1063,
+                1,Param1064,
+                1,Param1065,
+                1,Param1066,
+                1,Param1067,
+                1,Param1068,
+                1,Param1069,
+                1,Param1070,
+                1,Param1071,
+                4,;
+        Assem770 =
+                "Configuration Assembly",
+                "20 04 25 00 02 03 30 03",
+                124,
+                0x0000,
+                ,,
+                8,Param10200,
+                8,Param10201,
+                8,Param10300,
+                8,Param10301,
+                8,Param10302,
+                8,Param10303,
+                8,Param10304,
+                8,Param10305,
+                8,Param10306,
+                8,Param10307,
+                8,Param10308,
+                8,Param10309,
+                8,Param10310,
+                8,Param10311,
+                16,Param10312,
+                8,Param10320,
+                8,Param10324,
+                8,Param10321,
+                8,Param10325,
+                8,Param10322,
+                8,Param10326,
+                8,Param10323,
+                8,Param10327,
+                8,Param10328,
+                8,Param10329,
+                16,Param10330,
+                16,Param12332,
+                16,Param13333,
+                8,Param11331,
+                8,Param10334,
+                16,Param12336,
+                16,Param13337,
+                8,Param11335,
+                8,Param10338,
+                16,Param12340,
+                16,Param13341,
+                8,Param11339,
+                8,Param10342,
+                16,Param12344,
+                16,Param13345,
+                8,Param11343,
+                8,Param10346,
+                16,Param12348,
+                16,Param13349,
+                8,Param11347,
+                8,Param10350,
+                16,Param12352,
+                16,Param13353,
+                8,Param11351,
+                8,Param10354,
+                16,Param12356,
+                16,Param13357,
+                8,Param11355,
+                8,Param10358,
+                16,Param12360,
+                16,Param13361,
+                8,Param11359,
+                8,Param10362,
+                16,Param12364,
+                16,Param13365,
+                8,Param11363,
+                8,Param10366,
+                16,Param12368,
+                16,Param13369,
+                8,Param11367,
+                8,Param10370,
+                16,Param12372,
+                16,Param13373,
+                8,Param11371,
+                8,Param10374,
+                16,Param12376,
+                16,Param13377,
+                8,Param11375,
+                8,Param10378,
+                8,Param14379,
+                8,,
+                16,Param15380,
+                8,Param14381,
+                8,,
+                16,Param15382,
+                8,Param14383,
+                8,,
+                16,Param15384,
+                8,Param14385,
+                8,,
+                16,Param15386,
+                8,Param14387,
+                8,,
+                16,Param15388,
+                8,Param14389,
+                8,,
+                16,Param15390;
+
+[Connection Manager]
+        MaxSafetyConnections = 15;
+        MaxSafetyInputCnxns = 15;
+        MaxSafetyOutputCnxns = 1;
+        DefaultSafetyConnections = 3,9;
+        SafetyFormat = 3;
+        Connection1 =
+                0x02030002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44640305,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                Param2,0,,              $ O->T RPI, size, format
+                Param2,,Assem768,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                0,,                     $ target config size, format
+                "Input Only",           $ Connection Name
+                "Input Only connection",$ help string
+                "20 04 24 67 2C C6 2D 00 00 03";    $ Path
+        Connection2 =
+                0x01030002,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x44240305,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                Param2,0,,              $ O->T RPI, size, format
+                Param2,,Assem768,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                0,,                     $ target config size, format
+                "Listen Only",          $ Connection Name
+                "Listen Only connection",    $ help string
+                "20 04 24 67 2C C7 2D 00 00 03";    $ Path
+        Connection3 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem524,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Input",         $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 0C 02",    $ Path
+                1,
+                15;
+        Connection4 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem540,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Input + Combined Status",    $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 1C 02",    $ Path
+                1,
+                15;
+        Connection5 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem556,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Input + SI Pt. Status",    $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 2C 02",    $ Path
+                1,
+                15;
+        Connection6 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem579,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "SO Pt. Status",        $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 43 02",    $ Path
+                1,
+                15;
+        Connection7 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem604,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Input + SI, SO Combined Status",    $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 5C 02",    $ Path
+                1,
+                15;
+        Connection8 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem636,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Input + SI Combined Status + SO Pt. Status",    $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 7C 02",    $ Path
+                1,
+                15;
+        Connection9 =
+                0x84040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22445505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                Param1,,Assem563,       $ O->T RPI, size, format
+                ,,,                     $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Output",        $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 33 02 25 00 00 04",    $ Path
+                ,
+                ;
+        Connection10 =
+                0x02040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22645505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                ,,,                     $ O->T RPI, size, format
+                Param1,,Assem768,       $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Global Input",  $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 00 04 25 00 00 03",    $ Path
+                1,
+                15;
+        Connection11 =
+                0x84040001,             $ 0-15    = supported transport classes
+                                        $ 16      = trigger: cyclic
+                                        $ 17      = trigger: change of state
+                                        $ 18      = trigger: application
+                                        $ 19-23   = trigger: reserved
+                                        $ 24      = application type: listen-only
+                                        $ 25      = application type: input-only
+                                        $ 26      = application type: exclusive-owner
+                                        $ 27      = application type: redundant-owner
+                                        $ 28-30   = reserved
+                                        $ 31      = Direction: Client = 0 / Server = 1
+                0x22445505,             $ 0       = O->T fixed size supported
+                                        $ 1       = O->T variable size supported
+                                        $ 2       = T->O fixed size supported
+                                        $ 3       = T->O variable size supported
+                                        $ 4-5     = O->T number of bytes per slot (obsolete)
+                                        $ 6-7     = T->O number of bytes per slot (obsolete)
+                                        $ 8-10    = O->T Real time transfer format
+                                        $ 11      = reserved
+                                        $ 12-14   = T->O Real time transfer format
+                                        $ 15      = reserved
+                                        $ 16      = O->T connection type: NULL
+                                        $ 17      = O->T connection type: MULTICAST
+                                        $ 18      = O->T connection type: POINT2POINT
+                                        $ 19      = O->T connection type: reserved
+                                        $ 20      = T->O connection type: NULL
+                                        $ 21      = T->O connection type: MULTICAST
+                                        $ 22      = T->O connection type: POINT2POINT
+                                        $ 23      = T->O connection type: reserved
+                                        $ 24      = O->T priority: LOW
+                                        $ 25      = O->T priority: HIGH
+                                        $ 26      = O->T priority: SCHEDULED
+                                        $ 27      = O->T priority: reserved
+                                        $ 28      = T->O priority: LOW
+                                        $ 29      = T->O priority: HIGH
+                                        $ 30      = T->O priority: SCHEDULED
+                                        $ 31      = T->O priority: reserved
+                Param1,,Assem769,       $ O->T RPI, size, format
+                ,,,                     $ T->O RPI, size, format
+                ,,                      $ proxy config size, format
+                ,Assem770,              $ target config size, format
+                "Safety Global Output", $ Connection Name
+                "",                     $ help string
+                "20 04 25 00 02 03 25 00 01 03 25 00 00 04",    $ Path
+                ,
+                ;
+
+[Capacity]
+        TSpec1 = Tx, 4, 1000;
+        TSpec2 = Rx, 9, 1000;
+
+[DLR Class]
+        Revision = 3;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+        Ring_Supervisor_Capable = No;
+
+[TCP/IP Interface Class]
+        Revision = 4;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+        Instance_Attributes =
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                10,
+                11,
+                13;
+
+[Ethernet Link Class]
+        Revision = 3;
+        MaxInst = 3;
+        Number_Of_Static_Instances = 3;
+        Max_Number_Of_Dynamic_Instances = 0;
+        InterfaceLabel1 = "ETH1";
+        InterfaceLabel2 = "ETH2";
+        InterfaceLabel3 = "Internal Port";
+        InterfaceType1 = 2;
+        InterfaceType2 = 2;
+        InterfaceType3 = 1;
+
+[QoS Class]
+        Revision = 1;
+        MaxInst = 1;
+        Number_Of_Static_Instances = 1;
+        Max_Number_Of_Dynamic_Instances = 0;
+

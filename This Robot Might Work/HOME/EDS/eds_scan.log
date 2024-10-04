@@ -1,0 +1,48 @@
+2024-09-03 14:09:00.3105053872 : EDS reader version 2.0.1
+2024-09-03 14:09:00.3105053872 : Scanning /hd0a/2600-801846/HOME/EDS
+2024-09-03 14:09:00.3105053875 : /hd0a/2600-801846/HOME/EDS/02A6006401130B00.eds
+2024-09-03 14:09:00.3105053977 : ...parse done.
+2024-09-03 14:09:00.3105054198 : ...store /hd0a/2600-801846/HOME/EDS/02A6006401130B00.eds.cfg done.
+2024-09-03 14:09:00.3105054227 : ...load /hd0a/2600-801846/HOME/EDS/02A6006401130B00.eds.cfg done.
+2024-09-03 14:09:00.3105054227 : ...create template device done.
+2024-09-03 14:09:00.3105054227 : /hd0a/2600-801846/HOME/EDS/BL20-E-GW-EN_R2.eds
+2024-09-03 14:10:11.3105125729 : ...parse done.
+2024-09-03 14:10:12.3105126149 : ...store /hd0a/2600-801846/HOME/EDS/BL20-E-GW-EN_R2.eds.cfg done.
+2024-09-03 14:10:12.3105126233 : ...load /hd0a/2600-801846/HOME/EDS/BL20-E-GW-EN_R2.eds.cfg done.
+2024-09-03 14:10:12.3105126233 : ...create template device done.
+2024-09-03 14:10:12.3105126233 : /hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds
+2024-09-03 14:10:13.3105127454 : ...parse done.
+2024-09-03 14:10:13.3105127454 : Exception: (u'/hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds', 'MaxSafetyInputCnxns vendor or modular connection entry...skip')
+2024-09-03 14:10:13.3105127772 : Exception: (u'/hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds', 'SafetyFormat vendor or modular connection entry...skip')
+2024-09-03 14:10:13.3105127773 : Exception: (u'/hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds', 'DefaultSafetyConnections vendor or modular connection entry...skip')
+2024-09-03 14:10:13.3105127773 : Exception: (u'/hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds', 'MaxSafetyOutputCnxns vendor or modular connection entry...skip')
+2024-09-03 14:10:13.3105127773 : Exception: (u'/hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds', 'MaxSafetyConnections vendor or modular connection entry...skip')
+2024-09-03 14:10:15.3105129390 : ...store /hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds.cfg done.
+2024-09-03 14:10:15.3105129439 : ...load /hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds.cfg done.
+2024-09-03 14:10:15.3105129439 : ...create template device done.
+2024-09-03 14:10:15.3105129439 : /hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds
+2024-09-03 14:10:15.3105129605 : ...parse done.
+2024-09-03 14:10:15.3105129606 : Exception: (u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', 'Max_Number_Of_Dynamic_Instances vendor or modular connection entry...skip')
+2024-09-03 14:10:15.3105129607 : Exception: (u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', 'MaxInst vendor or modular connection entry...skip')
+2024-09-03 14:10:15.3105129607 : Exception: (u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', 'Number_Of_Static_Instances vendor or modular connection entry...skip')
+2024-09-03 14:10:16.3105129866 : Exception: (u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', 'Object_Name vendor or modular connection entry...skip')
+2024-09-03 14:10:16.3105130095 : Exception: (u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', 'Object_Class_Code vendor or modular connection entry...skip')
+2024-09-03 14:10:16.3105130095 : Exception: (u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', 'Revision vendor or modular connection entry...skip')
+2024-09-03 14:10:16.3105130099 : ...store /hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds.cfg done.
+2024-09-03 14:10:16.3105130132 : ...load /hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds.cfg done.
+2024-09-03 14:10:16.3105130133 : ...create template device done.
+2024-09-03 14:10:16.3105130133 : /hd0a/2600-801846/HOME/EDS/02A6030E0E010100.eds
+2024-09-03 14:10:16.3105130246 : ...parse done.
+2024-09-03 14:10:16.3105130471 : Exception: (u'/hd0a/2600-801846/HOME/EDS/02A6030E0E010100.eds', 'Object_Class_Code vendor or modular connection entry...skip')
+2024-09-03 14:10:16.3105130472 : Exception: (u'/hd0a/2600-801846/HOME/EDS/02A6030E0E010100.eds', 'Object_Name vendor or modular connection entry...skip')
+2024-09-03 14:10:16.3105130475 : ...store /hd0a/2600-801846/HOME/EDS/02A6030E0E010100.eds.cfg done.
+2024-09-03 14:10:16.3105130647 : ...load /hd0a/2600-801846/HOME/EDS/02A6030E0E010100.eds.cfg done.
+2024-09-03 14:10:16.3105130647 : ...create template device done.
+2024-09-03 14:10:16.3105130648 : /hd0a/2600-801846/HOME/EDS/02A6030E0E030100.eds
+2024-09-03 14:10:17.3105130802 : ...parse done.
+2024-09-03 14:10:17.3105131031 : Exception: (u'/hd0a/2600-801846/HOME/EDS/02A6030E0E030100.eds', 'Object_Class_Code vendor or modular connection entry...skip')
+2024-09-03 14:10:17.3105131031 : Exception: (u'/hd0a/2600-801846/HOME/EDS/02A6030E0E030100.eds', 'Object_Name vendor or modular connection entry...skip')
+2024-09-03 14:10:17.3105131031 : ...store /hd0a/2600-801846/HOME/EDS/02A6030E0E030100.eds.cfg done.
+2024-09-03 14:10:17.3105131064 : ...load /hd0a/2600-801846/HOME/EDS/02A6030E0E030100.eds.cfg done.
+2024-09-03 14:10:17.3105131064 : ...create template device done.
+2024-09-03 14:10:17.3105131068 : Done. Processed files [u'/hd0a/2600-801846/HOME/EDS/02A6006401130B00.eds', u'/hd0a/2600-801846/HOME/EDS/BL20-E-GW-EN_R2.eds', u'/hd0a/2600-801846/HOME/EDS/Molex 0008002306220100.eds', u'/hd0a/2600-801846/HOME/EDS/TRUMPF_TruMark_EIP_V1.1_1805146.eds', u'/hd0a/2600-801846/HOME/EDS/02A6030E0E010100.eds', u'/hd0a/2600-801846/HOME/EDS/02A6030E0E030100.eds']

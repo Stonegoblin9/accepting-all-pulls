@@ -1,0 +1,281 @@
+<SafetyConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:abb-robotics-safety-controller-configuration sc_cfg.1.03.01.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" version="1.03.01" xmlns="urn:abb-robotics-safety-controller-configuration">
+  <ConfigurationSeal checksum="BB74F3EF4CFFBD15910C247F2FD15302DB2678514D9F34D603831AA7CEB9AAFF" checksumShort="DECD76AB" creationDate="2023-06-05T09:47:45.7676035-04:00" createdBy="Default User" systemName="2600-801846" swVersion="1.03.03" RW_Version="6.11.01" RS_Version="22.02.00">
+    <ProtectedElements checksum="F1945CD6C19E56B3C1C78943EF5EC18116907A4CA1EFC40A57D48AB1DB7ADFC5" />
+    <SiosCfg version="1.2">
+      <Signal name="SafetyEnable" type="BOOL" default="1" visible="true" readonly="false" />
+      <Signal name="AutomaticMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ManualMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ManualFullSpeedMode" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="DriveEnable" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="DriveEnableFeedback" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="LocalEmergencyStopStatus" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ExternalPowerControlActive" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="ExternalPowerControlFeedback" type="BOOL" default="0" visible="true" readonly="false" />
+      <Signal name="AutoIn" type="BOOL" default="0" visible="false" readonly="true" />
+      <Signal name="ManualIn" type="BOOL" default="0" visible="false" readonly="true" />
+      <Signal name="ManualFSIn" type="BOOL" default="0" visible="false" readonly="true" />
+      <Signal name="Door_0" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="Door_1" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="Bushing_0" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="Bushing_1" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s5" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s6" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s7" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s8" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s9" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s10" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s11" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <Signal name="s12" type="BOOL" default="0" visible="true" readonly="false" protected="false" />
+      <FuncIOMappings>
+        <AutomaticMode signalName="AutomaticMode" mandatory="true" />
+        <AutoIn signalName="AutoIn" mandatory="true" visible="false" />
+        <DriveEnable signalName="DriveEnable" mandatory="true" />
+        <LocalEmergencyStopStatus signalName="LocalEmergencyStopStatus" mandatory="true" />
+        <ManualMode signalName="ManualMode" mandatory="true" />
+        <ManualIn signalName="ManualIn" mandatory="true" visible="false" />
+        <ManualFullSpeedMode signalName="ManualFullSpeedMode" mandatory="true" />
+        <ManualFSIn signalName="ManualFSIn" mandatory="true" visible="false" />
+        <SafetyEnable signalName="SafetyEnable" mandatory="true" />
+        <ExternalPowerControlActive signalName="ExternalPowerControlActive" mandatory="true" />
+        <ExternalPowerControlFeedback signalName="ExternalPowerControlFeedback" mandatory="true" />
+        <DriveEnableFeedback signalName="DriveEnableFeedback" mandatory="true" />
+      </FuncIOMappings>
+      <Net name="CSAdapter" visible="true" readonly="false">
+        <Device name="TCDEC_8B4P_DYU_G_8351570120" inSizeBits="16" outSizeBits="0" scid="F9598082" nodeId="C0A80102" snn="000400000001" scidDateTime="2021-05-26T16:20:48.842-04:00" connectionType="originator" timeCoordinationMsgMultiplier="2" timeoutMultiplier="2" formatType="2" maxFault="5">
+          <Signal name="Door_0" type="BOOL" default="0" visible="true" protected="false" offset="0" width="1" direction="input" />
+          <Signal name="Door_1" type="BOOL" default="0" visible="true" protected="false" offset="1" width="1" direction="input" />
+          <Signal name="Bushing_0" type="BOOL" default="0" visible="true" protected="false" offset="2" width="1" direction="input" />
+          <Signal name="Bushing_1" type="BOOL" default="0" visible="true" protected="false" offset="3" width="1" direction="input" />
+          <Signal name="s5" type="BOOL" default="0" visible="true" protected="false" offset="4" width="1" direction="input" />
+          <Signal name="s6" type="BOOL" default="0" visible="true" protected="false" offset="5" width="1" direction="input" />
+          <Signal name="s7" type="BOOL" default="0" visible="true" protected="false" offset="6" width="1" direction="input" />
+          <Signal name="s8" type="BOOL" default="0" visible="true" protected="false" offset="7" width="1" direction="input" />
+          <Signal name="s9" type="BOOL" default="0" visible="true" protected="false" offset="8" width="1" direction="input" />
+          <Signal name="s10" type="BOOL" default="0" visible="true" protected="false" offset="9" width="1" direction="input" />
+          <Signal name="s11" type="BOOL" default="0" visible="true" protected="false" offset="10" width="1" direction="input" />
+          <Signal name="s12" type="BOOL" default="0" visible="true" protected="false" offset="11" width="1" direction="input" />
+        </Device>
+        <Device name="EN_Internal_Device_Safe" inSizeBits="64" outSizeBits="64" address="" scid="NotUsed" nodeId="C0A87D01" snn="123456789ABC" connectionType="target" visible="true" readonly="false" />
+      </Net>
+      <Net name="Feedback" visible="true" readonly="false">
+        <Device name="SC_Feedback_Dev" inSizeBits="0" outSizeBits="2048" address="" visible="true" readonly="false">
+          <Signal name="SafetyEnable" type="BOOL" default="1" offset="0" width="1" direction="output" />
+          <Signal name="AutomaticMode" type="BOOL" default="0" offset="1" width="1" direction="output" />
+          <Signal name="ManualMode" type="BOOL" default="0" offset="2" width="1" direction="output" />
+          <Signal name="ManualFullSpeedMode" type="BOOL" default="0" offset="3" width="1" direction="output" />
+          <Signal name="DriveEnable" type="BOOL" default="0" offset="4" width="1" direction="output" />
+          <Signal name="DriveEnableFeedback" type="BOOL" default="0" offset="5" width="1" direction="output" />
+          <Signal name="LocalEmergencyStopStatus" type="BOOL" default="0" offset="6" width="1" direction="output" />
+          <Signal name="ExternalPowerControlActive" type="BOOL" default="0" offset="7" width="1" direction="output" />
+          <Signal name="ExternalPowerControlFeedback" type="BOOL" default="0" offset="8" width="1" direction="output" />
+        </Device>
+      </Net>
+      <Net name="SafeLocalIO" visible="false" readonly="true">
+        <Device name="SafeLocalIODev" inSizeBits="6" outSizeBits="2" address="" visible="false" readonly="true">
+          <FuncIO name="AutoIn" direction="input" visible="false" readonly="true" offset="0" width="1" />
+          <FuncIO name="ManualIn" direction="input" visible="false" readonly="true" offset="1" width="1" />
+          <FuncIO name="ManualFSIn" direction="input" visible="false" readonly="true" offset="2" width="1" />
+          <FuncIO name="DriveEnableFeedback" direction="input" visible="false" readonly="true" offset="3" width="1" />
+          <FuncIO name="LocalEmergencyStopStatus" direction="input" visible="false" readonly="true" offset="4" width="1" />
+          <FuncIO name="ExternalPowerControlFeedback" direction="input" visible="false" readonly="true" offset="5" width="1" />
+          <FuncIO name="DriveEnable" direction="output" visible="false" readonly="true" offset="0" width="1" />
+          <FuncIO name="ExternalPowerControlActive" direction="output" visible="false" readonly="true" offset="1" width="1" />
+        </Device>
+      </Net>
+    </SiosCfg>
+    <ClCfg version="1.2">
+      <Operators />
+      <PreLogic />
+      <PostLogic />
+    </ClCfg>
+    <SystemCfg version="1.0">
+      <FuncIO name="AutomaticMode" direction="input" />
+      <FuncIO name="CommissioningModeActive" direction="input" />
+      <FuncIO name="ConfigurationLocked" direction="input" />
+      <FuncIO name="DriveEnable" direction="input" />
+      <FuncIO name="ExternalPowerControlActive" direction="input" />
+      <FuncIO name="ExtComShutdownReq" direction="input" />
+      <FuncIO name="ManualMode" direction="input" />
+      <FuncIO name="ManualFullSpeedMode" direction="input" />
+      <FuncIO name="SafetyControllerOperational" direction="input" />
+      <FuncIO name="ServiceModeActive" direction="input" />
+      <FuncIO name="Stop0Status" direction="input" />
+      <FuncIO name="Stop1Status" direction="input" />
+      <FuncIO name="Stop0Status" direction="input" />
+      <FuncIO name="Stop1Status" direction="input" />
+      <FuncIO name="SafetyControllerOperational" direction="input" />
+      <FuncIO name="ServiceModeActive" direction="input" />
+      <FuncIO name="CommissioningModeActive" direction="input" />
+      <FuncIO name="ConfigurationLocked" direction="input" />
+      <FuncIO name="ExtComShutdownReq" direction="input" />
+      <FuncIO name="ExtComShutdownAck" direction="output" />
+    </SystemCfg>
+    <SafetyCfg version="1.0">
+      <StopFunction id="1" emStop="false" mode="Auto" stopType="Category1Stop" name="Stop">
+        <PhysicalInput signalName="Door_0" />
+      </StopFunction>
+      <StopFunction id="2" emStop="false" mode="Auto" stopType="Category1Stop" name="Stop_1">
+        <PhysicalInput signalName="Door_1" />
+      </StopFunction>
+      <DriveModuleConfiguration driveModuleId="1" maxSpeedManualMode="0.25">
+        <Robot name="ROB_1" startSpeedOffset="0.1">
+          <Baseframe>
+            <Translation x="0" y="0" z="0" />
+            <Quaternion q1="1" q2="0" q3="0" q4="0" />
+          </Baseframe>
+          <ElbowOffset x="-0.126" y="0" z="0.225" />
+          <UpperArmGeometry xs:type="Capsule" name="Capsule_1" radius="0.125">
+            <Start x="0.132318" y="-0.005081" z="0.13451" />
+            <End x="0.76116" y="-0.007429" z="0.124007" />
+          </UpperArmGeometry>
+          <UpperArmGeometry xs:type="Sphere" name="Sphere" radius="0.3">
+            <Center x="0" y="-0.086959" z="0.074361" />
+          </UpperArmGeometry>
+          <Joint id="1" calPosition="0" />
+          <Joint id="2" calPosition="0" />
+          <Joint id="3" calPosition="0" />
+          <Joint id="4" calPosition="0" />
+          <Joint id="5" calPosition="0" />
+          <Joint id="6" calPosition="0" />
+        </Robot>
+        <Tool id="1" name="Tool">
+          <TCP x="0" y="0" z="0" />
+          <ToolOrientation q1="1" q2="0" q3="0" q4="0" />
+          <ToolGeometry xs:type="Capsule" name="Gripper" radius="0.1">
+            <Start x="0.041257" y="0" z="-0.028608" />
+            <End x="0.074287" y="0" z="0.107134" />
+          </ToolGeometry>
+        </Tool>
+        <SyncCheck>
+          <SyncPosition jointId="1" positionValue="0" />
+          <SyncPosition jointId="2" positionValue="0" />
+          <SyncPosition jointId="3" positionValue="0" />
+          <SyncPosition jointId="4" positionValue="0" />
+          <SyncPosition jointId="5" positionValue="0" />
+          <SyncPosition jointId="6" positionValue="0" />
+        </SyncCheck>
+        <SafeZone id="1" name="CellWalls" top="2" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="-1.11" y="-1.475" />
+          <Point x="1.367432" y="-1.475" />
+          <Point x="1.367432" y="1.447228" />
+          <Point x="-1.11" y="1.447228" />
+        </SafeZone>
+        <SafeZone id="2" name="ChuteElectrical" top="0.75" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="0.175" y="1.39" />
+          <Point x="0.5" y="1.39" />
+          <Point x="0.5" y="1.75" />
+          <Point x="0.175" y="1.75" />
+        </SafeZone>
+        <SafeZone id="3" name="DiscardChute" top="1.4" bottom="0.95" speedLimitPriority="NORMAL">
+          <Point x="1.125" y="0.3" />
+          <Point x="1.5" y="0.3" />
+          <Point x="1.5" y="0.581346" />
+          <Point x="1.125" y="0.581346" />
+        </SafeZone>
+        <SafeZone id="4" name="LaserMarkerFrame" top="2" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="1.125" y="0.224" />
+          <Point x="1.3" y="0.224" />
+          <Point x="1.3" y="-0.48" />
+          <Point x="1.125" y="-0.48" />
+          <Point x="1.125" y="-0.59" />
+          <Point x="1.5" y="-0.59" />
+          <Point x="1.5" y="0.325" />
+          <Point x="1.125" y="0.325" />
+        </SafeZone>
+        <SafeZone id="5" name="Camera" top="1.99" bottom="1.775" speedLimitPriority="NORMAL">
+          <Point x="0.9" y="-0.48" />
+          <Point x="1.6" y="-0.48" />
+          <Point x="1.6" y="0.25" />
+          <Point x="0.9" y="0.25" />
+        </SafeZone>
+        <SafeZone id="6" name="MaterialSensor" top="1.875" bottom="1.425" speedLimitPriority="NORMAL">
+          <Point x="1.16" y="-0.48" />
+          <Point x="1.7" y="-0.48" />
+          <Point x="1.7" y="0.25" />
+          <Point x="1.16" y="0.25" />
+        </SafeZone>
+        <SafeZone id="7" name="LaserMarkerTable" top="0.95" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="1.089" y="0.075" />
+          <Point x="0.988212" y="0.075" />
+          <Point x="0.99" y="-0.59" />
+          <Point x="1.75" y="-0.59" />
+          <Point x="1.75" y="0.325" />
+          <Point x="1.089" y="0.325" />
+        </SafeZone>
+        <SafeZone id="8" name="BushingPressTop" top="2.1" bottom="1.05" speedLimitPriority="NORMAL">
+          <Point x="0.5" y="-1.75" />
+          <Point x="1.367432" y="-1.475" />
+          <Point x="1.75" y="-0.59" />
+          <Point x="0.875" y="-0.85" />
+          <Point x="0.675" y="-0.95" />
+        </SafeZone>
+        <SafeZone id="9" name="BushingPressBottom" top="0.675" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="1.175" y="-1.65" />
+          <Point x="1.865" y="-1.1" />
+          <Point x="1.175" y="-0.55" />
+          <Point x="0.485" y="-1.08" />
+        </SafeZone>
+        <SafeZone id="10" name="ConveyorTop" top="2.05" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="-1.2" y="-1.6" />
+          <Point x="-0.5" y="-1.6" />
+          <Point x="-0.5" y="-1.44" />
+          <Point x="-0.85" y="-1.44" />
+          <Point x="-0.85" y="-0.95" />
+          <Point x="-1.2" y="-0.95" />
+        </SafeZone>
+        <SafeZone id="11" name="ConveyorBottom" top="0.805" bottom="0" speedLimitPriority="NORMAL">
+          <Point x="-1.259054" y="-1.6" />
+          <Point x="-0.62" y="-1.6" />
+          <Point x="-0.62" y="-0.93" />
+          <Point x="-0.84" y="-0.93" />
+          <Point x="-0.84" y="-0.5" />
+          <Point x="-1.259054" y="-0.5" />
+        </SafeZone>
+        <ToolPositionSupervision id="1" name="CW_AllowTravel" safeZoneId="1" allowInside="true" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="2" name="CE_DenyTravel" safeZoneId="2" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="3" name="DC_DenyTravel" safeZoneId="3" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="4" name="LMF_DenyTravel" safeZoneId="4" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="5" name="C_DenyTravel" safeZoneId="5" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="6" name="MS_DenyTravel" safeZoneId="6" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="7" name="LMT_DenyTravel" safeZoneId="7" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="8" name="BST_DenyTravel" safeZoneId="8" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="9" name="BPB_DenyTravel" safeZoneId="9" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="10" name="CT_DenyTravel" safeZoneId="10" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+        <ToolPositionSupervision id="11" name="CB_DenyTravel" safeZoneId="11" allowInside="false" includeRobot="true">
+          <ActivationFunction xs:type="Permanent" />
+          <ViolationFunction stopType="Category1Stop" />
+        </ToolPositionSupervision>
+      </DriveModuleConfiguration>
+    </SafetyCfg>
+  </ConfigurationSeal>
+</SafetyConfiguration>

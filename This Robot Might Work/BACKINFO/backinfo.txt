@@ -1,0 +1,82 @@
+#
+# Generated backup file, do not edit.
+#
+# Originally at: /hd0a/TEMP/backup.027939
+# 2024-10-04  10:47:49
+#
+>>SYSTEM_ID:
+2600-801846
+
+>>PRODUCTS_ID:
+RobotWare Version: 6.11.01.00
+
+  RobotWare Base
+  997-4 CIP Safety Scanner And Adapter
+  841-1 EtherNet/IP Scanner/Adapter
+  996-1 Safety Module
+  608-1 World Zones
+  613-1 Collision Detection
+  616-1 PC Interface
+  617-1 FlexPendant Interface
+  623-1 Multitasking
+  1341-1/1520-1 Integrated Vision Interface
+  1125-2 SafeMove Pro
+  Motor Commutation
+  Service Info System
+  Pendelum Calibration
+  Drive System IRB 2600/390/4400/6400R
+  IRB 2600-12/1.65 Type B
+  Axis Calibration
+
+>>HOME:
+All public files and directories
+
+>>SYSPAR:
+SYS.cfg
+PROC.cfg
+MMC.cfg
+EIO.cfg
+SIO.cfg
+MOC.cfg
+
+
+>>TASK1: (T_ROB1,Colorflow Automation,)
+PROGMOD/LaserMethods.mod @ 
+PROGMOD/BushingCabinetMethods.mod @ 
+PROGMOD/VisionMethods.mod @ 
+SYSMOD/user.sys @ 
+PROGMOD/ConveyorMethods.mod @ 
+PROGMOD/MainModule.mod @ 
+PROGMOD/PressMethods.mod @ 
+PROGMOD/WebsiteMethods.mod @ 
+PROGMOD/PartChuteMethods.mod @ 
+PROGMOD/HelperFunctions.mod @ 
+
+>>TASK2: (SC_CBC,,)
+SYSMOD/user.sys @ 
+
+>>TASK3: (T_CreateBackup,,)
+SYSMOD/user.sys @ 
+PROGMOD/CreateBackup.mod @ 
+
+>>TASK4: (DoorUnlock,,)
+SYSMOD/user.sys @ 
+PROGMOD/DoorUnlock.mod @ 
+
+>>TASK5: (T_Robot_Status,T_Robot_Status,)
+PROGMOD/Robot_Status.mod @ 
+SYSMOD/user.sys @ 
+
+>>TASK6: (T_StartupAsync,,)
+PROGMOD/LaserFunctions.mod @ 
+SYSMOD/user.sys @ 
+PROGMOD/MainModule.mod @ 
+
+>>TASK7: (T_SocketComms,,)
+PROGMOD/ServerCommand_Write.mod @ 
+SYSMOD/user.sys @ 
+PROGMOD/MainModule.mod @ 
+PROGMOD/ServerCommand_Read.mod @ 
+
+
+>>EOF:

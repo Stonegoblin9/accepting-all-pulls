@@ -1,0 +1,7 @@
+This log file stores data about robot start conditions signed by the operators acting as a pre-start checklist
+Log Last Retrieved: 
+
+Format: Timestamp,OpInitials,RobotPositionStatus,LaserCheckStatus,BushingFixtureCheckStatus,BushingDrawerStatus,ConveyorStatus
+RobotPositionStatus Options->ChuteHome, LaserHome, BushingHome, OtherValid
+
+########## Begin Log ##########
